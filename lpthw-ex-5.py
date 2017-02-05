@@ -10,6 +10,8 @@ weight = 180 # lbs
 eyes = 'Blue'
 teeth = 'White'
 hair = 'Brown'
+mheight = height * 2.54
+mweight = weight / 2.2
 
 print "Let's talk about %s." % name
 print "He's %d inches tall." % height
@@ -20,3 +22,5 @@ print "His teeth are usually %s depending on the coffee." % teeth
 
 print "If I add %d, %d, and %d I get %d." % (age, height, weight,
                                              age + height + weight)
+
+print "His height is %d centimeters and his weight is %d kilograms." % (mheight, mweight)
