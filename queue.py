@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 """This program does stuff."""
 
+
 class Queue:
     def __init__(self):
         self.items = []
