@@ -69,3 +69,23 @@ def divide_by_2(dec_number):
     return bin_string
 
 print(divide_by_2(127))
+
+
+def base_converter(dec_number, base):
+    digits = "0123456789ABCDEF"
+
+    rem_stack = Stack()
+
+    while dec_number > 0:
+        rem = dec_number % base
+        rem_stack.push(rem)
+        dec_number = dec_number // base
+
+    new_string = ""
+    while not rem_stack.is_empty():
+        new_string = new_string + digits[rem_stack.pop()]
+
+    return new_string
+
+print(base_converter(25, 2))
+print(base_converter(25, 16))
